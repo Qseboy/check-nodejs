@@ -1,25 +1,6 @@
 "use strict";
 
-// let number = 1;
 
-
-// console.log(-4/0);
-// console.log("string" * 9);
-
-
-// const person = "Alex";
-
-// let obj = {
-//     age: 17,
-//     name: "Ivan",
-//     inUkraine: false,
-//     money: [300, 400, 300]
-// };
-
-// console.log(obj.money[1]);
-
-// const result = confirm("Are you here?");
-// console.log(result);
 
 // let res = +prompt("male or female?", "");
 // console.log(res+10);
@@ -31,9 +12,25 @@
 
 // document.write(answers);
 
+// const category = "toys";
+// const num = 1;
+// console.log(`http://google.com/${category}/${num}`);
 
-конкотинация;
 
-const category = "toys";
-const num = 1;
-console.log(`http://google.com/${category}/${num}`);
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?", "");
+
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genders: [],
+    privat: false
+};
+
+for(let i = 0; i < 2; i++) {
+    let lastFilm = prompt("Один из последних просмотренных фильмов", "");
+    let filmRating = +prompt("На сколько оцените его", "");
+    personalMovieDB.movies[lastFilm] = filmRating;
+}
+
+console.log(personalMovieDB);
