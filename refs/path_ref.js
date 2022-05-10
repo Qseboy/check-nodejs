@@ -6,3 +6,5 @@ const path = require("path");
 console.log(path.parse(__filename).ext);
 
 console.log(path.join(__dirname, ".." , "index.html"));
+
+console.log(path.resolve(__dirname));
